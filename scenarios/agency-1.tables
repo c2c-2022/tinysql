@@ -1,0 +1,32 @@
+# get a sum of points by agent.  But  if they are agency, roll them all up to one pseudo-agent, "AGENCY"
+# so the results should be
+
+('2', 11)
+('AGENCY', 17)
+
+Because 3 and 9 are both in agency
+====================
+
+
+table: sales
+
+ AGENT_ID |       DATE | PARTY_ID | POINTS 
+        3 | 2022-03-03 |        5 |     10 
+        9 | 2022-03-03 |      175 |      5 
+        3 | 2022-04-02 |        5 |      2 
+        2 | 2022-04-03 |      633 |     11 
+
+	
+
+
+table:  agents  
+
+ ID | DEPT   | ISACTIVE 
+  2 | TLS    | Y        
+  3 | AGENCY | Y        
+  4 | TLS    | Y        
+  5 | POS    | Y        
+  6 | TLS    | Y        
+  7 | TLS    | Y        
+  8 | AGENCY | Y        
+  9 | AGENCY | Y        

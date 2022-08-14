@@ -1,0 +1,43 @@
+For each office, get the two people who have been there the longest, in order of
+Office name, then date, most senior first to latest.   Results should look like below.
+
+
+('Akron', 'William', '20180803')
+('Akron', 'Emma', '20200406')
+('Ft Lauderdale', 'Amelia', '20180704')
+('Ft Lauderdale', 'James', '20191223')
+('Seattle', 'Elijah', '20010303')
+('Seattle', 'Oliver', '20170303')
+
+Note the non-default delimiter in the data table
+
+================================
+
+table: Offices
+
+ID, City
+4, Akron
+10, Seattle
+11, Ft Lauderdale
+
+
+table: employees
+
+id, office_id, name, start_date
+10,11,Amelia, 20180704
+9,20 ,Ava, 20191107
+33,4 ,Benjamin, 20220116
+102,10 ,Charlotte,20200204
+35,10 ,Elijah,20010303
+7,4 ,Emma,20200406
+25,4 ,Isabella,20210303
+68,11 ,James,20191223
+19,11,Liam,20210303
+69,4 ,Noah, 20220113
+88,10 ,Oliver,20170303
+40,11,Olivia,20220116
+99,11,Sophia,20200406
+72,4 ,William,20180803
+
+
+
