@@ -26,6 +26,8 @@ class TableLoader:
         column_string = ','.join(column_string)
         print(f"{column_string=}")
 
+        drop_table =  f"DROP TABLE IF EXISTS {self.table_name};"
+        self.connection.execute(drop_table)
         create_table = f"CREATE TABLE IF NOT EXISTS {self.table_name} ({column_string});"
         self.connection.execute(create_table)
         cur = self.connection.cursor()
